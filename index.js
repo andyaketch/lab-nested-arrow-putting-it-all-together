@@ -1,14 +1,3 @@
-// const password=[1,2,3]
-
-// // function passwordCheck(keyword){
-// for (let i=0 ;i<length.password ;i++ )
-//   console.log(prompt("Enter your password:"))
-//   if (keyword===password);
-//   then;
-//   console.log("Password Accepted")
-//   else
-//     console.log("Wrong Password")
-// }
 
 function createLoginTracker(userInfo){
 
@@ -26,7 +15,15 @@ else
 }
 }
 
+const user = { username: "user1", password: "password123" };
+const tracker = createLoginTracker(user);
+
+console.log(tracker("wrong1"));     
+console.log(tracker("wrong2"));     
+console.log(tracker("password123")); 
+console.log(tracker("wrong4"));     
+
 // ()
-// module.exports = {
-//   ...(typeof createLoginTracker !== 'undefined' && { createLoginTracker })
-// };
+module.exports = {
+  ...(typeof createLoginTracker !== 'undefined' && { createLoginTracker })
+};
